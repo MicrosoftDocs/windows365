@@ -1,15 +1,15 @@
 ---
 # required metadata
-title: Troubleshoot on-premises network connections
+title: Troubleshoot Azure network connections
 titleSuffix:
-description: Troubleshoot on-premises network connections in Windows 365.
+description: Troubleshoot Azure network connections in Windows 365.
 keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
 ms.date: 08/02/2021
 ms.topic: troubleshooting
-ms.service: cloudpc
+ms.service: windows-365
 ms.subservice: 
 ms.localizationpriority: high
 ms.technology:
@@ -28,17 +28,17 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ---
 
-# Troubleshoot on-premises network connections
+# Troubleshoot Azure network connections
 
-The on-premises network connection (OPNC) periodically checks your environment to make sure that all requirements are met and are in a healthy state. If any check fails, you'll see error messages in the Microsoft Endpoint Manager admin center. This guide contains some further instructions for troubleshooting issues that may cause checks to fail.
+The Azure network connection (ANC) periodically checks your environment to make sure that all requirements are met and are in a healthy state. If any check fails, you'll see error messages in the Microsoft Endpoint Manager admin center. This guide contains some further instructions for troubleshooting issues that may cause checks to fail.
 
 ## Active Directory domain join
 
-When a Cloud PC is provisioned, it’s automatically joined to the provided domain. Active Directory domain join failure can occur for many reasons. If the domain join fails, make sure that:
+When a Cloud PC is provisioned, it’s automatically joined to the provided domain. To test the domain join process, a domain computer object is created in the defined Organizational Unit (OU) with a name similar to "CPC-Hth" every time Windows 365 health checks are run. These computer objects will be disabled when the health check is complete. Active Directory domain join failure can occur for many reasons. If the domain join fails, make sure that:
 
 - The domain join user has sufficient permissions to join the domain provided.  
 - The domain join user can write to the organizational unit (OU) provided.  
-- The domain join user is not restricted in how many computers they can join. For example, the default maximum joins per user is 10 and this can effect Cloud PC provisioning.
+- The domain join user isn't restricted in how many computers they can join. For example, the default maximum joins per user is 10 and this maximum can affect Cloud PC provisioning.
 - The subnet being used can reach a domain controller.
 - You test Add-Computer using the domain join credentials on a VM connected to the Cloud PC vNet/subnet.
 - You troubleshoot domain join failures like any physical computer in your organization.
@@ -59,9 +59,9 @@ If provisioning fails, make sure that:
 
 ## Azure subnet IP address range usage
 
-As part of the OPNC setup, you provide a subnet. This subnet is used for all Cloud PCs during the provisioning process. Each Cloud PC provisioning will create a virtual NIC and consume an IP address from the subnet.  
+As part of the ANC setup, you provide a subnet. This subnet is used for all Cloud PCs during the provisioning process. Each Cloud PC provisioning will create a virtual NIC and consume an IP address from the subnet.  
 
-Make sure that there is sufficient IP Address allocation available for the volume of Cloud PCs you expect to provision. Also, plan enough address space for provisioning failures and potential disaster recovery.  
+Make sure that there's sufficient IP Address allocation available for the volume of Cloud PCs you expect to provision. Also, plan enough address space for provisioning failures and potential disaster recovery.  
 
 If this check fails, make sure that:
 
@@ -82,7 +82,7 @@ Also, visit the Azure portal and view Policies. Make sure that there are no poli
 
 ## Azure virtual network readiness
 
-When creating an OPNC, we block the use of any vNet located in an unsupported region. For a list of supported regions, see [Requirements](requirements.md).  
+When creating an ANC, we block the use of any vNet located in an unsupported region. For a list of supported regions, see [Requirements](requirements.md).  
 
 If this check fails, make sure that the vNet provided is in a region in the supported region list.
 
@@ -96,7 +96,7 @@ This test attempts to resolve the domain name provided. For example, contoso.com
 - The subnet/vNet is routed correctly so that the Cloud PC can reach the DNS server provided.  
 - The Cloud PCs/virtual machines in the declared subnet can NSLOOKUP on the DNS server, and it responds with internal names.
 
-Along with standard the DNS lookup on the supplied domain name, we also check for the existence of _ldap._tcp.yourDomain.com records. This record indicates the DNS server provided is an Active Directory domain controller. The record is a reliable way to confirm that AD domain DNS is reachable. Make sure tht these records are accessible through the vNet provided in your on-premises network connection.
+Along with standard the DNS lookup on the supplied domain name, we also check for the existence of _ldap._tcp.yourDomain.com records. This record indicates the DNS server provided is an Active Directory domain controller. The record is a reliable way to confirm that AD domain DNS is reachable. Make sure tht these records are accessible through the vNet provided in your Azure network connection.
 
 ## Endpoint connectivity
 
@@ -108,21 +108,21 @@ If this test fails, make sure that:
 
 - You use the Azure Virtual Network troubleshooting tools to ensure that the provided vNet/subnet can reach the service endpoints listed in the doc.
 - The DNS server provided can resolve the external services correctly.
-- There is no proxy between the Cloud PC subnet and the internet.
+- There's no proxy between the Cloud PC subnet and the internet.
 - There are no firewall rules (physical, virtual, or in Windows) that might block required traffic.
 - You consider testing the endpoints from a VM on the same subnet declared for Cloud PCs.
 
 ## Environment and configuration is ready
 
-This check is used for many infrastructure related issues that might be related to infrastructure that customers are responsible for. It can include errors such as internal service time outs or those caused by customers deleting/changing Azure resources while checks are being run.  
+This check is used for many infrastructure related issues that might be related to infrastructure that customers are responsible for. It can include errors such as internal service time outs or errors caused by customers deleting/changing Azure resources while checks are being run.  
 
 Sometimes, these service errors are intermittent and a retry will complete successfully. Other times there’s no further troubleshooting that can be performed without the help of support.  
 
-We suggest you retry the checks in case of this error. If it persists, contact support for help.  
+We suggest you retry the checks if you encounter this error. If it persists, contact support for help.  
 
 ## First party app permissions
 
-When creating an OPNC, the wizard grants a certain level of permissions on the resource group and subscription. This lets the service smoothly provision Cloud PCs.  
+When creating an ANC, the wizard grants a certain level of permissions on the resource group and subscription. These permissions let the service smoothly provision Cloud PCs.  
 
 These permissions can be viewed and modified by Azure admins who hold such permissions.  
 
@@ -134,9 +134,9 @@ If any of these permissions are revoked, this check will fail. Make sure that th
 
 The role assignment on the subscription will be granted to the Cloud PC service principal.  
 
-Also, make sure that the permissions haven't been granted as [classic subscription administrator roles](/azure/role-based-access-control/rbac-and-directory-admin-roles#classic-subscription-administrator-roles) or "Roles (Classic)". This role is not sufficient. It must be one of Azure role-based access control built-in roles as listed above.
+Also, make sure that the permissions haven't been granted as [classic subscription administrator roles](/azure/role-based-access-control/rbac-and-directory-admin-roles#classic-subscription-administrator-roles) or "Roles (Classic)". This role isn't sufficient. It must be one of the Azure role-based access control built-in roles as listed above.
 
 <!-- ########################## -->
 ## Next steps
 
-[Learn about the OPNC health checks](health-checks.md).
+[Learn about the ANC health checks](health-checks.md).
