@@ -332,7 +332,7 @@ items:
     - name: Get audit logs by using PowerShell
       href: get-cloud-pc-audit-logs-using-powershell.md
     - name: Business continuity and disaster recovery
-      href: business-continuity-disaster-recovery.md
+      href: ../business-continuity-disaster-recovery.md
     - name: Windows 365 Graph APIs
       href: permission-scopes.md
 

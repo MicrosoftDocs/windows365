@@ -122,4 +122,4 @@ When organizations use Windows 365 with specified Windows and Microsoft 365 solu
 <!-- ########################## -->
 ## Next steps
 
-[Learn about troubleshooting Windows 365 issues](troubleshooting.md).
+[Learn about troubleshooting Windows 365 issues](enterprise/troubleshooting.md).

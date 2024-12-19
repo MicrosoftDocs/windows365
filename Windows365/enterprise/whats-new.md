@@ -349,7 +349,7 @@ Use the new device attestation status report in Microsoft Intune to find out if 
 
 #### Support for Omnissa Horizon clients and the Blast protocol with Windows 365 Enterprise is now generally available<!--51899029-->
 
-Support for Omnissa (previously VMware) Horizon clients and the Blast protocol with Windows 365 Enterprise Cloud PCs has moved out of preview and into general availability. For more information, see [Set up Omnissa Horizon for Windows 365 Enterprise](set-up-vmware-horizon.md).
+Support for Omnissa (previously VMware) Horizon clients and the Blast protocol with Windows 365 Enterprise Cloud PCs has moved out of preview and into general availability. For more information, see [Set up Omnissa Horizon for Windows 365 Enterprise](set-up-omnissa-horizon.md).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Provisioning
@@ -829,7 +829,7 @@ Windows 365 Boot is now available for US Government Community Cloud (GCC) custom
 
 #### UI change in web client<!--46838016-->
 
-The gear icon menu has been updated. For details on the new menu, see [Windows 365 web client](end-user-access-cloud-pc.md#windows-365-web-client).
+The gear icon menu has been updated. For details on the new menu, see [Windows 365 web client](../end-user-access-cloud-pc.md#windows-365-web-client).
 
 #### New Microsoft Teams app is now generally available for Windows 365<!--47459639-->
 
@@ -1063,7 +1063,7 @@ All Cloud PC reports can now be accessed from the **Cloud PC overview** section 
 
 #### Use VMWare Horizon clients and the Blast protocol with Windows 365 Enterprise (public preview)<!--44716096-->
 
-VMWare Horizon clients and the Blast protocol can be used with Windows 365 Enterprise Cloud PCs. This is a [public preview](..\public-preview.md). For more information, see [Set up VMware Horizon for Windows 365 Enterprise](set-up-vmware-horizon.md).
+VMWare Horizon clients and the Blast protocol can be used with Windows 365 Enterprise Cloud PCs. This is a [public preview](../public-preview.md). For more information, see [Set up VMware Horizon for Windows 365 Enterprise](set-up-omnissa-horizon.md).
 
 <!-- ########################## -->
 ## Week of August 7, 2023

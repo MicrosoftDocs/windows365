@@ -66,7 +66,7 @@ Example architecture of a Windows 365 service that enables administrators or end
 
 ## Virtual machine resiliency
 
-Each Windows 365 Cloud PC is a single instance Azure virtual machine. Resilience is provided at the Azure host level to mitigate any compute continuity issues. For more information, see [Business continuity and disaster recovery overview](business-continuity-disaster-recovery.md).
+Each Windows 365 Cloud PC is a single instance Azure virtual machine. Resilience is provided at the Azure host level to mitigate any compute continuity issues. For more information, see [Business continuity and disaster recovery overview](../business-continuity-disaster-recovery.md).
 
 ## Client resiliency
 

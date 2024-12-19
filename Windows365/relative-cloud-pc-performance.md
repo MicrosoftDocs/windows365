@@ -83,7 +83,7 @@ If you’d like more help in choosing a Cloud PC size for your users, check out 
 
 If it turns out that the Cloud PC size that you chose isn’t meeting the user’s needs:
 
-- For Windows 365 Enterprise, you can remotely change the size. You can change the vCPU cores, RAM, and storage. For more information, see [Resize a Cloud PC](resize-cloud-pc.md).
+- For Windows 365 Enterprise, you can remotely change the size. You can change the vCPU cores, RAM, and storage. For more information, see [Resize a Cloud PC](enterprise/resize-cloud-pc.md).
 - For Windows 365 Business, you can purchase a different license of the needed size to replace the user's current license.
 
 ## Next steps

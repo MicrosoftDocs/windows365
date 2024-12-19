@@ -101,4 +101,4 @@ You can use the following command to get a single audit event, where you'll need
 <!-- ########################## -->
 ## Next steps
 
-[Business continuity and disaster recovery](business-continuity-disaster-recovery.md).
+[Business continuity and disaster recovery](../business-continuity-disaster-recovery.md).
