@@ -1,8 +1,8 @@
 ---
 # required metadata
-title: Optimize enrollment restrictions for Windows 365 Link devices
+title: Configure enrollment restrictions for Windows 365 Link devices
 titleSuffix:
-description: Learn how to optimize enrollment restrictions for Windows 365 Link devices.
+description: Learn how to configure enrollment restrictions for Windows 365 Link devices.
 keywords:
 author: ErikjeMS  
 ms.author: erikje
