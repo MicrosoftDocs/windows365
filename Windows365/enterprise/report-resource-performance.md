@@ -84,4 +84,4 @@ When you select a particular device in one of the reports, you'll see specific i
 <!-- ########################## -->
 ## Next steps
 
-[Remoting connection report](report-remoting-connection.md)
+[Cloud PC connection quality report](report-cloud-pc-connection-quality.md)
