@@ -83,4 +83,4 @@ You can see similar utilization data on a per-Cloud PC basis:
 <!-- ########################## -->
 ## Next steps
 
-[Remoting connection report](report-remoting-connection.md)
+[Cloud PC connection quality report](report-cloud-pc-connection-quality.md)

@@ -99,4 +99,4 @@ This section shows which Cloud PCs are currently connected. To bring concurrency
 <!-- ########################## -->
 ## Next steps
 
-[Remoting connection report](report-remoting-connection.md)
+[Cloud PC connection quality report](report-cloud-pc-connection-quality.md)

@@ -80,6 +80,4 @@ The time it takes to complete the actions varies depending on the specific actio
 <!-- ########################## -->
 ## Next steps
 
-[Remoting connection report](report-remoting-connection.md)
-
-[Remotely manage Windows 365 devices](remotely-manage-cloud-pc.md). 
+[Remotely manage Windows 365 devices](remotely-manage-cloud-pc.md).

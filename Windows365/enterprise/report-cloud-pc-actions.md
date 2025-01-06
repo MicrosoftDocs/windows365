@@ -83,4 +83,4 @@ The tab shows the following columns:
 <!-- ########################## -->
 ## Next steps
 
-[Remoting connection report](report-remoting-connection.md)
+[Cloud PC connection quality report](report-cloud-pc-connection-quality.md)
