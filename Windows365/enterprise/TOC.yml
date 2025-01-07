@@ -281,8 +281,6 @@ items:
         href: report-connected-frontline-cloud-pcs.md
       - name: Resource performance report
         href: report-resource-performance.md
-      - name: Remoting connection report
-        href: report-remoting-connection.md
       - name: Cloud PCs cross region disaster recovery status report
         href: cross-region-disaster-recovery-report.md
     - name: Windows updates
