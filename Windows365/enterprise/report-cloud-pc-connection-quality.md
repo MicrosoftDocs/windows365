@@ -71,4 +71,4 @@ You can use these filters to identify connections that don't meet your organizat
 <!-- ########################## -->
 ## Next steps
 
-[Remoting connection report](report-remoting-connection.md)
+[Cloud PC connection quality report](report-cloud-pc-connection-quality.md)

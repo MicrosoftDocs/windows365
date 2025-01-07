@@ -77,4 +77,4 @@ A summary of recommendations by the type of Cloud PC. The report shows the **PC 
 <!-- ########################## -->
 ## Next steps
 
-[Remoting connection report](report-remoting-connection.md)
+[Cloud PC connection quality report](report-cloud-pc-connection-quality.md)
