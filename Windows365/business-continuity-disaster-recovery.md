@@ -120,6 +120,7 @@ When organizations use Windows 365 with specified Windows and Microsoft 365 solu
 - Active/Active data resilience providing ongoing access to user data, through OneDrive, even during a Windows 365 outage.
 
 <!-- ########################## -->
+
 ## Next steps
 
 [Learn about troubleshooting Windows 365 issues](enterprise/troubleshooting.md).
