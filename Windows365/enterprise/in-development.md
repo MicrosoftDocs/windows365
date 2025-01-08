@@ -73,10 +73,6 @@ To help in your readiness and planning, this page lists Windows 365 updates and 
 
 End users will be able to manually run connectivity checks on their Cloud PCs from [windows365.microsoft.com](https://windows365.microsoft.com).
 
-### Remoting connections report deprecation<!--52990648-->
-
-The remoting connection report will be retired on December 31st, 2024. After this date, refer to the [Cloud PC connection quality report](report-cloud-pc-connection-quality.md).
-
 <!-- ***********************************************-->
 ## Provisioning
 
