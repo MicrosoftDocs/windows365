@@ -71,7 +71,7 @@ To help in your readiness and planning, this page lists Windows 365 updates and 
 
 ### End user manual connectivity check<!--37679345 -->
 
-End users will be able to manually run connectivity checks on their Cloud PCs from [windows365.microsoft.com](https://windows365.microsoft.com).
+End users will be able to manually run connectivity checks on their Cloud PCs from [windows365.microsoft.com](https://windows365.microsoft.com). 
 
 <!-- ***********************************************-->
 ## Provisioning
