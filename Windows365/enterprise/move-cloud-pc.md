@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2024
+ms.date: 01/08/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -29,7 +29,7 @@ ms.collection:
 - tier2
 ---
 
-# Move a Cloud PC
+# Cloud PC move
 
 By editing a provisioning policy, you can move some or all existing Cloud PCs in a policy from:
 
@@ -46,7 +46,9 @@ By editing a provisioning policy, you can move some or all existing Cloud PCs in
 
 All Cloud PCs provisioned after these changes are created in the new region.
 
-## Move a subset of Cloud PCs
+## Move a subset of Cloud PCs (preview)
+
+Moving a subset of Cloud PCs is in [public preview](public-preview.md).
 
 [!INCLUDE [Move a Cloud PC first steps](../includes/move-cloud-pc-steps.md)]
 6. In the **Apply this configuration to existing Cloud PCs** box, select **Region or Azure network connections for select devices (preview)** > **Apply**.
