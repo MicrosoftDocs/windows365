@@ -48,7 +48,7 @@ All Cloud PCs provisioned after these changes are created in the new region.
 
 ## Move a subset of Cloud PCs (preview)
 
-Moving a subset of Cloud PCs is in [public preview](public-preview.md).
+Moving a subset of Cloud PCs is in [public preview](../public-preview.md).
 
 [!INCLUDE [Move a Cloud PC first steps](../includes/move-cloud-pc-steps.md)]
 6. In the **Apply this configuration to existing Cloud PCs** box, select **Region or Azure network connections for select devices (preview)** > **Apply**.
