@@ -31,7 +31,7 @@ ms.collection:
 
 # Remotely manage Windows 365 devices
 
-You can remotely manage Cloud PCs in Intune just like any other managed device. For more information, see [Use remote actions to manage devices using Intune](/mem/intune/remote-actions/device-management). 
+You can remotely manage Cloud PCs in Intune just like any other managed device. For more information, see [Use remote actions to manage devices using Intune](/mem/intune/remote-actions/device-management).
 
 Cloud PCs support the following remote management actions:
 
