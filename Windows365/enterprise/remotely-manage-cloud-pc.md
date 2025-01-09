@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/27/2024
+ms.date: 01/09/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -38,7 +38,7 @@ Cloud PCs support the following remote management actions:
 | Remote action | Bulk action support? |
 | --- | :---: |
 | [Collect diagnostics](/mem/intune/remote-actions/collect-diagnostics) | Yes |
-| Create Cloud PC manual restore point | Yes |
+| [Create Cloud PC manual restore point](create-manual-restore-point.md) | Yes |
 | Full Scan | No |
 | [Place Cloud PC Under Review](place-cloud-pc-under-review.md) | Yes |
 | Power Off (Windows 365 Frontline) (preview) | Yes |
@@ -50,7 +50,7 @@ Cloud PCs support the following remote management actions:
 | [Resize](resize-cloud-pc.md) | Yes |
 | Restart | Yes |
 | [Restore](restore-overview.md) | Yes|
-| Share Cloud PC restore point to storage | Yes |
+| [Share Cloud PC restore point to storage](share-restore-points-storage.md) | Yes |
 | Sync | Yes |
 | [Troubleshoot](health-checks-connectivity.md) | Yes |
 | Update Windows Defender | No |
