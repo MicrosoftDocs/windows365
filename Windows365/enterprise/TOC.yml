@@ -213,28 +213,32 @@ items:
         href: device-management-overview.md
       - name: Alerts
         href: alerts.md
-      - name: Remotely manage Cloud PC devices 
-        href: remotely-manage-cloud-pc.md
-      - name: Cloud PC maintenance windows
-        href: cloud-pc-maintenance-windows.md
-      - name: RDP Shortpath for public networks 
-        href: rdp-shortpath-public-networks.md
-      - name: RDP Shortpath for private networks  
-        href: rdp-shortpath-private-networks.md
-      - name: Reprovision a Cloud PC
-        href: reprovision-cloud-pc.md
-      - name: Bulk reprovision Frontline Cloud PCs
-        href: frontline-shared-bulk-reprovision.md
-      - name: Windows 365 Switch
-        href: windows-365-switch-overview.md
-      - name: Resize a Cloud PC
-        href: resize-cloud-pc.md
-      - name: Move a Cloud PC
-        href: move-cloud-pc.md
-      - name: Set idle session time limits
-        href: frontline-cloud-pc-session-time-limits.md
-      - name: Change default chroma value
-        href: chroma-value-change-default.md
+      - name: Remotely manage Cloud PCs
+        items:  
+        - name: Remotely manage overview 
+          href: remotely-manage-cloud-pc.md
+        - name: Change default chroma value
+          href: chroma-value-change-default.md
+        - name: End grace period
+          href: end-grace-period.md
+        - name: Maintenance windows
+          href: cloud-pc-maintenance-windows.md
+        - name: Move a Cloud PC
+          href: move-cloud-pc.md
+        - name: Reprovision a Cloud PC
+          href: reprovision-cloud-pc.md
+        - name: Bulk reprovision Frontline Cloud PCs
+          href: frontline-shared-bulk-reprovision.md
+        - name: Resize a Cloud PC
+          href: resize-cloud-pc.md
+        - name: Set idle session time limits
+          href: frontline-cloud-pc-session-time-limits.md
+      - name: RDP Shortpath
+        items:
+        - name: RDP Shortpath for public networks 
+          href: rdp-shortpath-public-networks.md
+        - name: RDP Shortpath for private networks  
+          href: rdp-shortpath-private-networks.md
       - name: Restore a Cloud PC
         items:
         - name: Overview
@@ -249,6 +253,8 @@ items:
           href: restore-bulk.md
         - name: Share restore points to a storage account
           href: share-restore-points-storage.md
+      - name: Windows 365 Switch
+        href: windows-365-switch-overview.md
       - name: Cross region disaster recovery
         items:
         - name: Overview
@@ -257,8 +263,6 @@ items:
           href: cross-region-disaster-recovery-set-up.md
         - name: Activate/deactivate cross region disaster recovery
           href: cross-region-disaster-recovery-activate.md
-      - name: End grace period
-        href: end-grace-period.md
       - name: Digital forensics
         items:
         - name: Overview
