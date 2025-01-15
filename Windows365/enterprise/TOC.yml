@@ -306,29 +306,29 @@ items:
     - name: Troubleshooting
       href: troubleshooting.md
     - name: Known issues 
-      href: known-issues-enterprise.md
+      href: /troubleshoot/windows-365/known-issues-enterprise?context=/windows-365/enterprise/context/context
     - name: Azure network connections
-      href: troubleshoot-azure-network-connection.md
+      href: /troubleshoot/windows-365/troubleshoot-azure-network-connection?context=/windows-365/enterprise/context/context
     - name: Azure network connection health checklist
-      href: health-checks.md
+      href: /troubleshoot/windows-365/health-checks?context=/windows-365/enterprise/context/context
     - name: Connectivity health checks
       href: health-checks-connectivity.md
     - name: Remote Desktop client
       href: /azure/virtual-desktop/troubleshoot-client?context=/windows-365/context/pr-context
     - name: Connection errors
-      href: connection-errors.md
+      href: /troubleshoot/windows-365/connection-errors?context=/windows-365/enterprise/context/context
     - name: Provisioning errors
-      href: provisioning-errors.md
+      href: /troubleshoot/windows-365/provisioning-errors?context=/windows-365/enterprise/context/context
     - name: Partner connectors
-      href: troubleshoot-partner-connector.md
+      href: /troubleshoot/windows-365/troubleshoot-partner-connector?context=/windows-365/enterprise/context/context
     - name: Windows 365 app
-      href: troubleshoot-windows-365-app.md
+      href: /troubleshoot/windows-365/troubleshoot-windows-365-app?context=/windows-365/enterprise/context/context
     - name: Windows 365 Boot
-      href: troubleshoot-windows-365-boot.md
+      href: /troubleshoot/windows-365/troubleshoot-windows-365-boot?context=/windows-365/enterprise/context/context
     - name: Windows 365 Boot known issues
-      href: windows-365-boot-known-issues.md
+      href: /troubleshoot/windows-365/windows-365-boot-known-issues?context=/windows-365/enterprise/context/context
     - name: Windows 365 Switch known issues
-      href: windows-365-switch-known-issues.md
+      href: /troubleshoot/windows-365/windows-365-switch-known-issues?context=/windows-365/enterprise/context/context
 - name: Reference
   items:
     - name: Get audit logs by using PowerShell
