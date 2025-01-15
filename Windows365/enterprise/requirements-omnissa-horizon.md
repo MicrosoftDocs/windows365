@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/21/2024
+ms.date: 01/15/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -47,6 +47,7 @@ To use Omnissa Horizon for Windows 365, you must meet the following requirements
   - Agent facing: 8444
   - Client facing: 443 and 8443
 - Omnissa UAG as a Service (Preview) is required for brokering to Windows 365 Cloud PCs. It's enabled by default when you turn on the Windows 365 provider type in Horizon Cloud Service – next-gen.
+- The customer must have a bring-your-own-network (BYON) and use an Azure network connection.
 
 ## Microsoft requirements
 
