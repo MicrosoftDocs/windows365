@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/11/2023
+ms.date: 01/17/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -90,7 +90,7 @@ The Windows App service principal can only access Azure resources necessary to c
 
 Follow these steps to configure tenant mapping using the Windows 365 GCC Setup Tool.
 
-1. Launch the GCCSetupTool.exe. This tool is available at https://aka.ms/gccsetuptool.
+1. Launch the GCCSetupTool.exe. This tool is available at [Windows 365 Government - GCC Setup Tool for Windows 10/11](https://www.microsoft.com/en-us/download/details.aspx?id=105234).
 2. On the **Let's get you started** page, select **Next**.
 3. Sign in with your Azure account. This account must have Global Administrator permissions.
 4. Confirm that you want to continue with your commercial account > **Next**.
