@@ -339,6 +339,66 @@
       "source_path": "Windows365/enterprise/report-remoting-connection.md",
       "redirect_url": "/windows-365/enterprise/report-cloud-pc-connection-quality",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/business/troubleshoot-windows-365-business.md",
+      "redirect_url": "/troubleshoot/windows-365/troubleshoot-windows-365-business",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/business/known-issues.md",
+      "redirect_url": "/troubleshoot/windows-365/known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/known-issues-enterprise.md",
+      "redirect_url": "/troubleshoot/windows-365/known-issues-enterprise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/troubleshoot-azure-network-connection.md",
+      "redirect_url": "/troubleshoot/windows-365/troubleshoot-azure-network-connection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/health-checks.md",
+      "redirect_url": "/troubleshoot/windows-365/health-checks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/connection-errors.md",
+      "redirect_url": "/troubleshoot/windows-365/connection-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/provisioning-errors.md",
+      "redirect_url": "/troubleshoot/windows-365/provisioning-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/troubleshoot-partner-connector.md",
+      "redirect_url": "/troubleshoot/windows-365/troubleshoot-partner-connector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/troubleshoot-windows-365-app.md",
+      "redirect_url": "/troubleshoot/windows-365/troubleshoot-windows-365-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/troubleshoot-windows-365-boot.md",
+      "redirect_url": "/troubleshoot/windows-365/troubleshoot-windows-365-boot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/windows-365-boot-known-issues.md",
+      "redirect_url": "/troubleshoot/windows-365/windows-365-boot-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Windows365/enterprise/windows-365-switch-known-issues.md",
+      "redirect_url": "/troubleshoot/windows-365/windows-365-switch-known-issues",
+      "redirect_document_id": false
     }
   ]
 }
