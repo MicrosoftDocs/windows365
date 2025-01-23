@@ -44,7 +44,7 @@ There may be situations where you don't want to wait seven days for the grace pe
     > [!Important]
     > This is a destructive act. It will delete the operating system and data. The Cloud PC will no longer be available.
 
-    ![Screenshot of End grace period](./media/end-grace-period/end-grace-period.png)
+    :::image type="content" source="media/end-grace-period/end-grace-period.png" lightbox="media/end-grace-period/end-grace-period.png" alt-text="Screenshot of the End grace period.":::
 
     After you select **Yes**, the following steps will happen automatically:
 
