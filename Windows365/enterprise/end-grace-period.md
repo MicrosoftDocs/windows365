@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/24/2024
+ms.date: 01/22/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -40,18 +40,18 @@ There may be situations where you don't want to wait seven days for the grace pe
 1. Ending the grace period is a destructive action. Before ending the grace period, notify your users to be sure that they're fully aware of the impact.
 2. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Windows 365** (under **Provisioning**) > **All Cloud PCs**.
 ![Screenshot of all Cloud PCs](./media/end-grace-period/all-cloud-pcs.png)
-3. In the **Status** column of the list, select **In grace period** > **End grace period** > **Yes**.
+3. In the **Status** column of the list, select **In grace period** > **Deprovision now** > **Yes**.
     > [!Important]
     > This is a destructive act. It will delete the operating system and data. The Cloud PC will no longer be available.
 
-    ![Screenshot of End grace period](./media/end-grace-period/end-grace-period.png)
+    :::image type="content" source="media/end-grace-period/end-grace-period.png" lightbox="media/end-grace-period/end-grace-period.png" alt-text="Screenshot of the End grace period.":::
 
-After you select **Yes**, the following steps will happen automatically:
+    After you select **Yes**, the following steps will happen automatically:
 
-1. The Cloud PC will start deprovisioning.
-2. The user loses access to the Cloud PC.
-3. The operating system and data are deleted from the Cloud PC. The Cloud PC is no longer available.
-4. If the original provisioning policy was replaced with a different policy, the Cloud PC will be reprovisioned with the settings in the new policy.
+    1. The Cloud PC will start deprovisioning.
+    2. The user loses access to the Cloud PC.
+    3. The operating system and data are deleted from the Cloud PC. The Cloud PC is no longer available.
+    4. If the original provisioning policy was replaced with a different policy, the Cloud PC will be reprovisioned with the settings in the new policy.
 
 <!-- ########################## -->
 ## Next steps
