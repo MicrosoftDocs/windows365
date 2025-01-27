@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/12/2024
+ms.date: 01/27/2025
 ms.topic: conceptual
 ms.service: windows-365
 
@@ -79,6 +79,10 @@ End users will be able to manually run connectivity checks on their Cloud PCs fr
 ### Windows 365 support for Spain Central region<!--54919607-->
 
 Windows 365 Enterprise will support the Spain Central region. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
+
+### Windows 365 support for Japan West<!--54919737-->
+
+Windows 365 Enterprise will support the Japan West region in the Japan geography. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
 
 ### Windows 365 support for Mexico Central region<!--54919656-->
 
