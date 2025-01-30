@@ -61,13 +61,13 @@ As part of the process to place Cloud PCs under review, Windows 365 requires the
     - **Networking**
         - **Network access**: **Enable public access from all networks**
 
-OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields:
+    OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields:
 
-  - Select **Enable versioning for blobs**.
-  - Select **Enable version-level immutability support**.
-  - When the **Premium** **Performance** option is selected, **Zone-redundant storage (ZRS)** must also be selected. Locally-redundant storage (LRS) is not a supported immutable storage option.
+      - Select **Enable versioning for blobs**.
+      - Select **Enable version-level immutability support**.
+      - When the **Premium** **Performance** option is selected, **Zone-redundant storage (ZRS)** must also be selected. Locally-redundant storage (LRS) is not a supported immutable storage option.
 
-NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
+    NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
 
 3. [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access). The minimum permissions required for the Windows 365 service to place a Cloud PC under review are Storage Account Contributor and Storage Blob Data Contributor.
 
