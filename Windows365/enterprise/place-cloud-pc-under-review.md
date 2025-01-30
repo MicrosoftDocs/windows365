@@ -61,7 +61,7 @@ As part of the process to place Cloud PCs under review, Windows 365 requires the
     - **Networking**
         - **Network access**: **Enable public access from all networks**
 
-    OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields:
+    OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields: 
 
       - Select **Enable versioning for blobs**.
       - Select **Enable version-level immutability support**.
