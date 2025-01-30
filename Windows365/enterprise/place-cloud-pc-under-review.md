@@ -79,7 +79,7 @@ After setting up an Azure storage account with permissions as explained above, y
     ![Screenshot of choose a device](./media/place-cloud-pc-under-review/choose-device.png)
 
 2. Select the ellipses (**…**) > **Place cloud PC under review**.
-    ![Screenshot of place a Cloud PC under review](./media/place-cloud-pc-under-review/place-cloud-pc-under-review.png)
+    :::image type="content" source="./media/place-cloud-pc-under-review/place-cloud-pc-under-review.png" alt-text="[Screenshot of place a Cloud PC under review." lightbox="./media/place-cloud-pc-under-review/place-cloud-pc-under-review.png":::
 
 3. Select the **Subscription**, **Storage account**, and **[Access tier](/azure/storage/blobs/access-tiers-overview)** (hot costs the most while archive costs the least) to which the Windows 365 service was given **Storage Account Contributor** and **Storage Blob Data Contributor** permissions.
 
