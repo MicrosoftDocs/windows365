@@ -52,7 +52,7 @@ As part of the process to place Cloud PCs under review, Windows 365 requires the
 2. Configure the storage account with the following settings;
     - **Instance details**
         - **Region**: Same region as CloudPC suggested for performance. There is no restriction on which region.
-        - **Performance**: **Premium** or **Standard** (both support all [access tiers](/azure/storage/blobs/access-tiers-overview)).
+        - **Performance**: **Premium** (supports hot access tier) or **Standard** (supports all [access tiers](/azure/storage/blobs/access-tiers-overview)).
         - **Premium account type**: **Page blobs**
     - **Security**
         - Minimum TLS version: **Version 1.2**.
@@ -68,6 +68,7 @@ OPTIONAL: If you want to copy your storage account copied to immutable storage, 
   - When the **Premium** **Performance** option is selected, **Zone-redundant storage (ZRS)** must also be selected. Locally-redundant storage (LRS) is not a supported immutable storage option.
 
 NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
+
 3. [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access). The minimum permissions required for the Windows 365 service to place a Cloud PC under review are Storage Account Contributor and Storage Blob Data Contributor.
 
 ## Place a Cloud PC under review
@@ -82,11 +83,11 @@ After setting up an Azure storage account with permissions as explained above, y
 
 3. Select the **Subscription**, **Storage account**, and **[Access tier](/azure/storage/blobs/access-tiers-overview)** (hot costs the most while archive costs the least) to which the Windows 365 service was given **Storage Account Contributor** and **Storage Blob Data Contributor** permissions.
 
-  Only Hot tier page blobs can be mounted by a VM. All other tiers are block blobs, which must be converted to a page blob if you need to mount the disk on a VM. The archive tier is an offline tier, so rehydration to an online tier is necessary before converting to a page blob.
+    Only Hot tier page blobs can be mounted by a VM. All other tiers are block blobs, which must be converted to a page blob if you need to mount the disk on a VM. The archive tier is an offline tier, so rehydration to an online tier is necessary before converting to a page blob.
 
-  **Standard performance storage account tiers**: For a Standard performance storage account, the tier for the blob being copied from Windows 365 to your storage account can be a different tier. If you setup a hot tier storage account, other objects will be hot by default. However, you can set the Cloud PC under review image to be cool, cold or archive.
+    **Standard performance storage account tiers**: For a Standard performance storage account, the tier for the blob being copied from Windows 365 to your storage account can be a different tier. If you setup a hot tier storage account, other objects will be hot by default. However, you can set the Cloud PC under review image to be cool, cold or archive.
 
-  **Premium performance storage account tiers**: Premium performance is always a hot tier storage account. The drop-down menu for access tier is ignored for Premium performance storage accounts.
+    **Premium performance storage account tiers**: Premium performance is always a hot tier storage account. The drop-down menu for access tier is ignored for Premium performance storage accounts.
 
 4. Under **Access during review**, if you choose
 
