@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/28/2024
+ms.date: 01/30/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -52,15 +52,22 @@ As part of the process to place Cloud PCs under review, Windows 365 requires the
 2. Configure the storage account with the following settings;
     - **Instance details**
         - **Region**: Same region as CloudPC suggested for performance. There is no restriction on which region.
-        - **Performance**: **Premium** (supports only hot [access tier](/azure/storage/blobs/access-tiers-overview)) or **Standard** (supports all access tiers).
+        - **Performance**: **Premium** or **Standard** (both support all [access tiers](/azure/storage/blobs/access-tiers-overview)).
         - **Premium account type**: **Page blobs**
     - **Security**
-        - Minimum TLS version: **Version 1.2**
-        - Confirm **Allow blob anonymous access** is disabled (the default)
+        - Minimum TLS version: **Version 1.2**.
+        - Confirm **Allow blob anonymous access** is disabled (the default).
+        - Disable **Enable storage account key access**.
     - **Networking**
         - **Network access**: **Enable public access from all networks**
 
-   NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
+OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields:
+
+  - Select **Enable versioning for blobs**.
+  - Select **Enable version-level immutability support**.
+  - When the **Premium** **Performance** option is selected, **Zone-redundant storage (ZRS)** must also be selected. Locally-redundant storage (LRS) is not a supported immutable storage option.
+
+NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
 3. [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access). The minimum permissions required for the Windows 365 service to place a Cloud PC under review are Storage Account Contributor and Storage Blob Data Contributor.
 
 ## Place a Cloud PC under review
@@ -73,15 +80,22 @@ After setting up an Azure storage account with permissions as explained above, y
 2. Select the ellipses (**…**) > **Place cloud PC under review**.
     ![Screenshot of place a Cloud PC under review](./media/place-cloud-pc-under-review/place-cloud-pc-under-review.png)
 
-3. Select the **Subscription**, **Storage account**, and **Access tier** to which the Windows 365 service was given **Storage Account Contributor** and **Storage Blob Data Contributor** permissions.
+3. Select the **Subscription**, **Storage account**, and **[Access tier](/azure/storage/blobs/access-tiers-overview)** (hot costs the most while archive costs the least) to which the Windows 365 service was given **Storage Account Contributor** and **Storage Blob Data Contributor** permissions.
 
-   Under **Access during review**, if you choose
+  Only Hot tier page blobs can be mounted by a VM. All other tiers are block blobs, which must be converted to a page blob if you need to mount the disk on a VM. The archive tier is an offline tier, so rehydration to an online tier is necessary before converting to a page blob.
+
+  **Standard performance storage account tiers**: For a Standard performance storage account, the tier for the blob being copied from Windows 365 to your storage account can be a different tier. If you setup a hot tier storage account, other objects will be hot by default. However, you can set the Cloud PC under review image to be cool, cold or archive.
+
+  **Premium performance storage account tiers**: Premium performance is always a hot tier storage account. The drop-down menu for access tier is ignored for Premium performance storage accounts.
+
+4. Under **Access during review**, if you choose
+
    - **Block Access**, the Cloud PC will be immediately powered off so the user cannot access the Cloud PC, and then the snapshot will be created. This is useful in cases where you may want to contain a security threat by shutting the Cloud PC down, and then performing analysis of the snapshot later in an isolated environment.
    - **Allow Access**, the Cloud PC user can continue to use the Cloud PC even as you create a snapshot in the storage account.
-   - 
+
     ![Screenshot of choose a subscription and storage](./media/place-cloud-pc-under-review/subscription-storage.png)
 
-5. Select **Place under review**. Based on the disk size of the Cloud PC and storage account destination region, it can range from minutes to a few hours for each snapshot to be saved to the storage account.
+5. Select **Place under review**. Based on the disk size of the Cloud PC and storage account destination region, it can range from minutes to a few hours for each snapshot to be saved to the storage account. For example, it can take up to one hour or more per 128 GB of disk data for a storage account in the same Azure region.
 
 To make the snapshot tamper-evident, you should create a file hash of the snapshot when it has been saved in the storage account. One way of creating the file hash is to use the [Get-FileHash](/powershell/module/microsoft.powershell.utility/get-filehash) cmdlet. For best performance, the Get-FileHash cmdlet should be run against a copy of the downloaded file or be run against the snapshot in the Azure storage account from a resource located in the same Azure region.
 
