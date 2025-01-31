@@ -154,7 +154,7 @@ Before using the ANC deployment option, review these considerations:
 - Longer deployment. Deployment is usually longer than with the Microsoft-hosted network option. This extra time is caused by the high number of customer side elements that must be configured first.
 - Higher Risk. An ANC deployment is more complex than a Microsoft-hosted network deployment. This complexity increases the risk of connectivity issues.
 
-- MHN does not support fixed IP addresses for cloud PC outbound connections. As a result, different IP addresses may be observed when using different applications or even the same application at different times.
+- Microsoft-hosted networks don't support fixed IP addresses for Cloud PC outbound connections. As a result, different IP addresses may be observed when using different applications or even the same application at different times.
 
 ## Simultaneous options
 
