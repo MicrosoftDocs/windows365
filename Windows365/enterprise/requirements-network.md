@@ -124,6 +124,8 @@ Port 3389 is disabled by default for all newly provisioned Cloud PCs. Microsoft 
 - [Windows 365 Security Baselines](deploy-security-baselines.md). Customers can use the Windows 365 Security Baselines to effectively manage port 3389 for Windows 365 Cloud PCs. These baselines provide comprehensive tools and configurations designed to enhance security measures while allowing necessary access. By adjusting Firewall Settings and setting the **Default Inbound Action for Public Profile** to *Allow*, organizations can make sure that port 3389 is appropriately configured to meet operational needs. Review and customize these settings according to your specific organizational requirements.
 - [Create a custom Firewall rule in Microsoft Intune](/mem/intune/protect/endpoint-security-firewall-policy). Customers can use custom Firewall rules in Microsoft Intune to configure port 3389 for Windows 365 Cloud PCs. This option involves creating a custom rule within Intune's security policies tailored to allow inbound traffic on port 3389, which is used for access to Cloud PCs. By defining the rule parameters such as port number, protocol (TCP), and restricting specific IP addresses or networks, you can make sure that access to port 3389 is tightly controlled and limited to authorized entities only.
 
+Note: Before creating allow rules, ensure that any existing block rules for port 3389 are disabled to avoid conflicts.
+
 These options aren't applicable for customers using a Microsoft-hosted network.
 
 ### [Windows 365 Government](#tab/gov)
