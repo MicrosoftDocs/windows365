@@ -35,7 +35,7 @@ All [Azure network connections](azure-network-connections.md) (ANC) get periodic
 
 ## Requirements
 
-To edit  an ANC, you must have the [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator) or [Windows 365 Administrator](/azure/active-directory/roles/permissions-reference) role. You must also have the Subscription Reader role in the Azure Subscription where the VNET associated with the ANC was located.
+To edit an ANC, you must have the [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator) or [Windows 365 Administrator](/azure/active-directory/roles/permissions-reference) role. You must also have the Subscription Reader role in the Azure Subscription where the VNET associated with the ANC was located.
 
 ## Edit an Azure network connection
 
@@ -48,11 +48,13 @@ After the edits are saved, the ANC checks are run to verify the configuration.
 
 You can't edit an ANC if it's running checks. You must wait for the checks to pass/fail before edit functionality becomes available.
 
-Some configuration settings can't be edited for ANCs that are:
+Configuration settings (except Name) can't be edited for ANCs that are:
 
 - Referenced by a provisioning policy, including as an alternate ANC.
 - Used by a Cloud PC.
 - Configured as backup ANCs for [cross region disaster recovery](cross-region-disaster-recovery.md).
+
+If an edit is required to change the ANC a Cloud PC is connected to then please refer to the documentation to [Move a Cloud PC](/windows-365/enterprise/move-cloud-pc)
 
 <!-- ########################## -->
 ## Next steps
