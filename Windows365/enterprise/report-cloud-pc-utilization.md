@@ -29,7 +29,7 @@ ms.collection:
 - tier2
 ---
 
-# Cloud PC utilization report (preview)
+# Cloud PC utilization report
 
 The Cloud PC utilization report helps you monitor and optimize Cloud PC usage in your organization. It shows you how much time users spend on their Cloud PCs and when they last connected to them.
 
@@ -40,11 +40,11 @@ By reviewing Cloud PCs with low usage, you can reduce costs by:
 
 ## Use the Cloud PC utilization report
 
-To get to the **Cloud PC utilization** report, sign in to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Cloud PC performance** > **Cloud PCs utilization (preview)**.
+To get to the **Cloud PC utilization** report, sign in to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Cloud PC performance** > **Cloud PC utilization**.
 
 :::image type="content" source="./media/report-cloud-pc-utilization/view-report.png" alt-text="Screenshot of getting to the Cloud PC utilization report." lightbox="./media/report-cloud-pc-utilization/view-report.png":::
 
-## Cloud PC utilization (preview) report page (tenant data)
+## Cloud PC utilization report page (tenant data)
 
 The report shows the following tenant data aggregated for the last four weeks:
 
@@ -76,7 +76,7 @@ You can use these filters to help you understand usage patterns and identify Clo
 
 You can see similar utilization data on a per-Cloud PC basis:
 
-1. sign in to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Cloud PC performance** > **Cloud PCs utilization (preview)**.
+1. Sign in to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Cloud PC performance** > **Cloud PC utilization**.
 2. Select a device and then select **Performance (preview)**.
 3. The **Time connected** section shows usage data for this Cloud PC. For more detail, in this section, select **View report**.
 
