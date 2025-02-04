@@ -54,7 +54,7 @@ You can complete the guided scenario before there are any devices in the group. 
 ## Step 1 - Introduction
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) as a user with the Intune Service Administrator role.
-2. Select **Devices** > **Windows 365** (under **Provisioning**) > **Windows 365 Boot** (under Windows 365 guides). If you want to use public preview features, select **Windows 365 Boot - Public Preview**.
+2. Select **Devices** > **Windows 365** (under **Overview**) > **Windows 365 Boot** (under Windows 365 guides).
 3. On the **Introduction** page, select **Next: Basics**.
 
 ## Step 2 - Basics
@@ -101,7 +101,7 @@ Windows 365 Boot supports [Windows Autopatch](/windows/deployment/windows-autopa
 1. (Optional) On the **Settings** page, select the **VPN profile** and **Wifi profile** to use for Windows 365 Boot physical devices. When you select an existing WiFi or VPN profile, if the profile is already assigned to **All Users** or **All Devices**, this assignment will be removed and replaced with a new assignment that only targets the Windows 365 group created or selected in this guided scenario.
 2. (Optional) If you don't want to use the operating system's default language, select a specific **Language (region)** > **Next: Assignments**.
 3. (Optional) Select the **Security baseline profile** to use for Windows 365 Boot physical devices.
-4. (Optional) Select a value for the **Set the maximum connection timeout value** for Windows 365 Boot. The operating system waits for a connection until the selected timeout value has been reached. For more information, see [SetMaxConnectionTimeout policy CSP](/windows/client-management/mdm/policy-csp-clouddesktop#setmaxconnectiontimeout).
+4. (Optional) Select a value for the **Set Max Connection timeout** for Windows 365 Boot. The operating system waits for a connection until the selected timeout value has been reached. For more information, see [SetMaxConnectionTimeout policy CSP](/windows/client-management/mdm/policy-csp-clouddesktop#setmaxconnectiontimeout).
 5. (Optional) If you want to customize the branding shown at the top of the sign-in screen, provide any or all of the following information:
     - **Company name**
     - **Company logo URL**
@@ -116,7 +116,7 @@ Select the groups that you want to receive this guided scenario, and all the res
 
   - **Group name**: Enter the group name. For example, enter `Windows 365 boot physical devices`.
 
-- **Choose an existing group**: Select an existing group. You guided scenario resources are deployed to this group.
+- **Choose an existing group**: Select an existing group. Your guided scenario resources are deployed to this group.
 
 When you're done assigning groups, select **Next: Review + create**.
 
