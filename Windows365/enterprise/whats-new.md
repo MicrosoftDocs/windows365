@@ -66,7 +66,7 @@ For more information about public preview items, see [Public preview in Windows 
 To help lower your storage costs, hot, cool, cold and archive tiers can now be selected when placing a Cloud PC under review. To help with compliance it is now also possible to  place a Cloud PC under review onto hot, cool and cold access tiers configured with immutability support.
 
 #### New Device Type filter on All Cloud PCs page<!--54919359-->
- 
+
 The new Device Type filter on the All Cloud PCs page lets you filter the results by the type of Cloud PC (Enterprise, Frontline, Dev Box, Power Automate).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
