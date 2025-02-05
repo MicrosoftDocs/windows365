@@ -56,6 +56,22 @@ For more information about public preview items, see [Public preview in Windows 
 -->
 
 <!-- ########################## -->
+## Week of January 3, 2025 (Service release 2501)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Storage access tier selection when placing Cloud PC under review<!—55955042-->
+
+To help lower your storage costs, hot, cool, cold and archive tiers can now be selected when placing a Cloud PC under review. To help with compliance it is now also possible to  place a Cloud PC under review onto hot, cool and cold access tiers configured with immutability support.
+
+### Windows 365 Frontline
+
+#### More precise Windows 365 Frontline concurrency control<!--49324723-->
+
+You can now allocate concurrent sessions for Windows 365 Frontline Cloud PCs in dedicated mode for each Microsoft Entra group assigned in the provisioning policy. This lets you reserve sessions to specific groups so sessions won't be consumed by other groups, and help you control your maximum concurrency limits.
+
+<!-- ########################## -->
 ## Week of December 17, 2024
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
