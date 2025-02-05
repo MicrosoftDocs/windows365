@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 09/16/2024
+ms.date: 01/06/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -52,7 +52,7 @@ A few things to keep in mind:
 - Windows 365 Frontline in shared mode
 
   - If you remove users from your Microsoft Entra user group, the user loses access to the Cloud PC.
-  - If you remove the Microsoft Entra user group from the assignment, the Cloud PCs are automatically deprovisioned.
+  - If you remove the Microsoft Entra user group from the assignment, the Cloud PCs are automatically deprovisioned without moving into grace period.
 
 ## Create a provisioning policy
 
@@ -68,8 +68,8 @@ A few things to keep in mind:
     - **Enterprise**: Provision Cloud PCs for Windows 365 Enterprise.
     - **Frontline**: Provision Cloud PCs for [Windows 365 Frontline](introduction-windows-365-frontline.md).
 4. If you choose **Frontline**, you must also select a **Frontline type**:
-    - **Dedicated**: Provision Cloud PCs in dedicated mode.
-    - **Shared**: Provision Cloud PCs in shared mode.
+    - **Dedicated**: Provision Cloud PCs in [dedicated mode](introduction-windows-365-frontline.md#windows-365-frontline-in-dedicated-mode).
+    - **Shared**: Provision Cloud PCs in [shared mode](introduction-windows-365-frontline.md#windows-365-frontline-in-shared-mode-preview).
 5. On the **General** page, select a **Join type**:
     - **Microsoft Entra Join**: You have two options for **Network**:
         - **Microsoft hosted network**: Select a **Geography** where you want your Cloud PCs provisioned. Then, for [**Region**](requirements.md#supported-azure-regions-for-cloud-pc-provisioning), you can select:
@@ -123,7 +123,7 @@ To select an ANC, follow these steps:
     Example of custom naming templates:
 
     - ABCDEF-%RAND:8%
-    
+
 7. Optional. Under **Additional services**, choose a service to be installed on Cloud PCs provisioned with this policy:
     - **Windows Autopatch** is a cloud service that automates updates for Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams on both physical and virtual devices. For more information, see [What is What is Windows Autopatch?](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) and the [Windows Autopatch FAQ](https://go.microsoft.com/fwlink/?linkid=2200228). The Windows Autopatch option isn't available for Frontline in shared mode.
         - If you already have Windows Autopatch configured to manage your cloud PCs, this option replaces the existing policy. This replacement might disrupt any dynamic distribution that is already configured in Autopatch.
@@ -133,10 +133,13 @@ To select an ANC, follow these steps:
 8. Select **Next**.
 9. On the **Assignments** page, choose **Select groups** > choose the groups you want this policy assigned to > **Select**. Nested groups aren't currently supported.
 10. For Windows 365 Frontline dedicated mode, you must also select a Cloud PC size for each group in the policy. Choose **Select one** > select a size under **Available sizes** > **Select**. After you select a size for each group, select **Next**.
-11. For Windows 365 Frontline in shared mode you must also:
-  1. Choose **Select one** > select a size under **Available sizes** > **Select**.
-  2. Type in a **Friendly name** > select a **Cloud PC number** > **Next**.
-12. On the **Review + create** page, select **Create**. If you used Microsoft Entra hybrid join as the join type, it can take up to 60 minutes for the policy creation process to complete. The time depends on when the Microsoft Entra Connect sync last happened.
+11. Optional (in [public preview](../public-preview.md)). You can optionally create an assignment to reserve a number of licenses for the group members by following these steps:
+    1. Under **Assignment**, enter an **Assignment name**.
+    2. For **Number of licenses**, enter a number of licenses that you want to reserve for the group. You can also see the number of unassigned licenses.
+12. For Windows 365 Frontline in shared mode you musto:
+    1. Choose **Select one** > select a size under **Available sizes** > **Select**.
+    2. Type in a **Friendly name** > select a **Cloud PC number** > **Next**. The **Friendly name** shows up in the end user's Windows Ap.
+13. On the **Review + create** page, select **Create**. If you used Microsoft Entra hybrid join as the join type, it can take up to 60 minutes for the policy creation process to complete. The time depends on when the Microsoft Entra Connect sync last happened.
 
 After the provisioning policy is created and assigned, Windows 365 automatically starts to provision Cloud PCs.
 
@@ -147,6 +150,10 @@ Microsoft Entra group members don't receive Cloud PCs if the number of users in 
 Admins can confirm the list of members who received Cloud PCs by reviewing the **Provisioning policy** > choose the policy > review the users in the groups under **Assignments**.
 
 Windows 365 Frontline licenses are for both Frontline Cloud PCs in dedicated mode and shared mode. Frontline Cloud PCs in dedicated mode are prioritized over shared mode when you add licenses.
+
+## Concurrency management (public preview)<!--49324723-->
+
+If you select the option to create an assignment, this defines the maximum concurrency limit for that group of users. When the concurrency limit is reached, additional users won't be able to lgo on. They must wait for licenses to be freed up. The concurrency buffer is bound to the assignment and is counted based on the assignment license count instead of the total license count. You can see license usage across different assignments in the [Connected Frontline Cloud PCs report](report-connected-frontline-cloud-pcs.md). This feature is in [public preview](../public-preview.md).
 
 <!-- ########################## -->
 ## Next steps
