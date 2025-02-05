@@ -69,6 +69,12 @@ To help lower your storage costs, hot, cool, cold and archive tiers can now be s
 
 The new Device Type filter on the All Cloud PCs page lets you filter the results by the type of Cloud PC (Enterprise, Frontline, Dev Box, Power Automate).
 
+### Provisioning
+
+#### Windows 365 support for Japan West<!--54919737-->
+
+Windows 365 Enterprise will support the Japan West region in the Japan geography. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
+
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Windows 365 Frontline
 
