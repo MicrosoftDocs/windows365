@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/27/2025
+ms.date: 02/06/2025
 ms.topic: conceptual
 ms.service: windows-365
 
@@ -80,10 +80,6 @@ End users will be able to manually run connectivity checks on their Cloud PCs fr
 
 Windows 365 Enterprise will support the Spain Central region. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
 
-### Windows 365 support for Japan West<!--54919737-->
-
-Windows 365 Enterprise will support the Japan West region in the Japan geography. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
-
 ### Windows 365 support for Mexico Central region<!--54919656-->
 
 Windows 365 Enterprise will support the Mexico Central region. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
@@ -100,10 +96,6 @@ Windows 365 Enterprise will support the Mexico Central region. For more informat
 ### Concurrency buffer usage alert<!--54902162-->
 
 You’ll be able to set up a new alert to monitor concurrency buffer usage for Windows 365 Frontline in dedicated mode.
-
-### More precise Windows 365 Frontline concurrency control<!--49324723-->
-
-In a future update, you'll be able to allocate concurrent sessions for Windows 365 Frontline Cloud PCs in dedicated mode for each Microsoft Entra group assigned in the provisioning policy. This lets you reserve sessions to specific groups so sessions won't be consumed by other groups, and help you control your maximum concurrency limits.
 
 ## Next steps
 

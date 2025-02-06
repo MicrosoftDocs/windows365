@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 12/18/2024
+ms.date: 01/06/2025
 ms.topic: conceptual
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -54,6 +54,34 @@ For more information about public preview items, see [Public preview in Windows 
 ### Windows 365 Government
 ### Windows 365 app 
 -->
+
+<!-- ########################## -->
+## Week of January 3, 2025 (Service release 2501)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Storage access tier selection when placing Cloud PC under review<!--55955042-->
+
+To help lower your storage costs, hot, cool, cold and archive tiers can now be selected when placing a Cloud PC under review. To help with compliance it is now also possible to  place a Cloud PC under review onto hot, cool and cold access tiers configured with immutability support.
+
+#### New Device Type filter on All Cloud PCs page<!--54919359-->
+
+The new Device Type filter on the All Cloud PCs page lets you filter the results by the type of Cloud PC (Enterprise, Frontline, Dev Box, Power Automate).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Provisioning
+
+#### Windows 365 support for Japan West<!--54919737-->
+
+Windows 365 Enterprise will support the Japan West region in the Japan geography. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Windows 365 Frontline
+
+#### More precise Windows 365 Frontline allotment<!--49324723-->
+
+You can now allocate concurrent sessions for Windows 365 Frontline Cloud PCs in dedicated mode for each Microsoft Entra group assigned in the provisioning policy. This lets you reserve sessions to specific groups so sessions won't be consumed by other groups, and help you control your maximum concurrency limits.
 
 <!-- ########################## -->
 ## Week of December 17, 2024

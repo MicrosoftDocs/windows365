@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/25/2024
+ms.date: 02/06/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -60,7 +60,9 @@ If a user has multiple Windows 365 SKUs assigned to them, they get multiple Clou
 
 **Image**: The image used during provisioning. This image might not be the current Cloud PC version. For example, an administrator may have updated Windows using Windows Update for Business and this update wouldn’t be reflected in this list view.  
 
-**PC type**: The Windows 365 SKU assigned to the user. A user may have more than one license/SKU assigned to them. If so, they have more Cloud PCs in this list view.  
+**Cloud PC size**: The Windows 365 SKU assigned to the user. A user may have more than one license/SKU assigned to them. If so, they have more Cloud PCs in this list view.  
+
+**Device Type**: The type of device (Enterprise, Frontline, Dev Box, Power Automate).
 
 **Status**: The current provisioning status of the Cloud PC. Possible states include:
   
