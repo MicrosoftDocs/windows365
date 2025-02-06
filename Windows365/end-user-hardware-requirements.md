@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/17/2024
+ms.date: 01/06/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice:
@@ -87,7 +87,7 @@ You can access Windows 365 Cloud PCs from your Linux OS devices by using:
 
 - The web client available at windows365.microsoft.com.
 - Third-party clients to connect to Azure Virtual Desktop, including:
-  - [Dell](https://www.delltechnologies.com/asset/en-us/products/thin-clients/technical-support/dell-thinos-9-for-microsoft-wvd.pdf)
+  - [Dell](https://www.delltechnologies.com/asset/en-us/services/consulting/briefs-summaries/implementation-for-azure-virtual-desktop-services-overview.pdf)
   - [HP](https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c07051097)
   - [IGEL](https://www.igel.com/igel-solution-family/)
 
