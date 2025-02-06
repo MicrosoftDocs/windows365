@@ -61,7 +61,7 @@ For more information about public preview items, see [Public preview in Windows 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
 
-#### Storage access tier selection when placing Cloud PC under review<!—55955042-->
+#### Storage access tier selection when placing Cloud PC under review<!--55955042-->
 
 To help lower your storage costs, hot, cool, cold and archive tiers can now be selected when placing a Cloud PC under review. To help with compliance it is now also possible to  place a Cloud PC under review onto hot, cool and cold access tiers configured with immutability support.
 
