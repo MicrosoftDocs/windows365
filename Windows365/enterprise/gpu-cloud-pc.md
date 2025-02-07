@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/31/2024
+ms.date: 02/07/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -43,6 +43,8 @@ Three GPU offerings are available for Window 365 Enterprise (including FedRamp) 
 
 For more information on these offerings, see [Cloud PC size recommendations](cloud-pc-size-recommendations.md).
 
+GPU Cloud PCs don't support nested virtualization. For more information, see [Set up virtualization-based workloads on your Windows 365 Cloud PC](nested-virtualization.md).
+
 For purchasing the GPU offerings, contact your account team. GPU offerings aren't available from the web direct channel.
 
 ## Registry keys and drivers on GPU Cloud PCs
@@ -54,7 +56,7 @@ Supported drivers are automatically installed as part of the provisioning proces
 ## Allowlist
 
 You must allow the following URLs on each Windows 365 GPU Cloud PC:
- 
+
 | URL | Hardware |
 | --- | --- |
 | download.microsoft.com | Nvidia, AMD |
