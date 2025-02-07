@@ -79,7 +79,7 @@ Windows 365 Enterprise will support the Japan West region in the Japan geography
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Windows 365 Frontline
 
-#### More precise Windows 365 Frontline allotment<!--49324723-->
+#### More precise Windows 365 Frontline concurrency control<!--49324723-->
 
 You can now allocate concurrent sessions for Windows 365 Frontline Cloud PCs in dedicated mode for each Microsoft Entra group assigned in the provisioning policy. This lets you reserve sessions to specific groups so sessions won't be consumed by other groups, and help you control your maximum concurrency limits.
 
