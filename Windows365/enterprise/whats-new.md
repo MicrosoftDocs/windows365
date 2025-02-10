@@ -56,7 +56,7 @@ For more information about public preview items, see [Public preview in Windows 
 -->
 
 <!-- ########################## -->
-## Week of January 3, 2025 (Service release 2501)
+## Week of February 3, 2025 (Service release 2501)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device management
