@@ -39,10 +39,10 @@ additionalContent:
       - title: Microsoft Entra ID
         links: 
         - text: User management documentation
-          url: /azure/active-directory/fundamentals/active-directory-manage-groups
+          url: /entra/fundamentals/how-to-create-delete-users
         - text: Authentication documentation
-          url: /azure/active-directory/authentication/
+          url: /entra/identity/authentication/
         - text: Device identity documentation
-          url: /azure/active-directory/devices/
+          url: /entra/identity/devices/
         - text: Hybrid identity documentation
-          url: /azure/active-directory/hybrid/
+          url: /entra/identity/hybrid/
