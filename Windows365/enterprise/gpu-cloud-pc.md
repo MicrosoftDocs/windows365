@@ -43,9 +43,19 @@ Three GPU offerings are available for Window 365 Enterprise (including FedRamp) 
 
 For more information on these offerings, see [Cloud PC size recommendations](cloud-pc-size-recommendations.md).
 
+Since regional capacity is dynamic, Microsoft uses available capacity when and where it's needed. Sometimes, this might result in GPU Cloud PCs exceeding their license specified minimum specifications. To see your Cloud PC’s GPU specifications, visit the performance tab of Task Manager.
+
 GPU Cloud PCs don't support nested virtualization. For more information, see [Set up virtualization-based workloads on your Windows 365 Cloud PC](nested-virtualization.md).
 
 For purchasing the GPU offerings, contact your account team. GPU offerings aren't available from the web direct channel.
+
+## GPU Cloud PC hosting and d: drive storage details
+
+Windows 365 GPU-enabled Cloud PCs are hosted by Microsoft using the latest version of Microsoft Hyper-V.
+
+Each of these Cloud PCs comes with an SSD storage drive (c:) for  data and applications plus a large ephemeral disk (d:).
+
+The ephemeral disk (d: drive) is deleted and recreated every time the Cloud PC reboots. Never use it to store your data. Instead, you can use it as a cache drive to store temporary files. This is helpful to improve the performance of applications that need scratch disks to process large data sets.
 
 ## Registry keys and drivers on GPU Cloud PCs
 
