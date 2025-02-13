@@ -76,6 +76,10 @@ The new Device Type filter on the All Cloud PCs page lets you filter the results
 
 Windows 365 Enterprise will support the Japan West region in the Japan geography. For more information, see [Supported Azure regions for Cloud PC provisioning](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning).
 
+#### Schedule bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode<!--56023525-->
+
+You can now schedule bulk reprovisioning for Windows 365 Frontline Cloud PCs in shared mode. For more information, see [Bulk reprovision Windows 365 Frontline Cloud PCs in shared mode](frontline-shared-bulk-reprovision.md#schedule-bulk-reprovision-frontline-cloud-pcs-in-shared-mode).
+
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Windows 365 Frontline
 
