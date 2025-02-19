@@ -11,6 +11,6 @@ ms.custom: include file
 
 ### Other requirements
 
-In order to use **Resize** there must be available licenses in inventory for the resized Cloud PC configuration.
+In order to use **Resize** there must be available licenses in the inventory for the resized Cloud PC configuration.
 
 To **Resize** a Cloud PC, it must have a status of **Provisioned** in the Windows 365 provisioning node.
