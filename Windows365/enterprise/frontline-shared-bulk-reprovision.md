@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 2/10/2025
+ms.date: 02/10/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -33,7 +33,7 @@ ms.collection:
 
 Windows 365 Frontline Cloud PCs created in shared mode can be reprovisioned in bulk. Any data saved to individual Cloud PCs is removed.
 
-Using bulk actions to reprovision multiple Cloud PCs at a time can help you:
+Using bulk actions to reprovision multiple Cloud PCs at a time can help you: 
 
 - Apply new configurations. For example, apply a new image.
 - Revert all Frontline Cloud PCs in shared mode to a known configuration. This action can help minimize configuration discrepancies that might across your pool of available shared Cloud PCs. Such discrepancies might arise over time when different policies or updates are applied to individual systems.
