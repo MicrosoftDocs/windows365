@@ -65,7 +65,7 @@ The **Resource performance score** is an overall performance rating (from 0 to 1
 
 ## Model performance tab
 
-You can review the CPU spike time and RAM spike time scores and percentages by for each Cloud PC model SKU in your organization.
+You can review the CPU spike time and RAM spike time scores and percentages for each Cloud PC model SKU in your organization.
 
 ![Screenshot of using the model performance tab](./media/report-resource-performance/model-performance-tab.png)
 
