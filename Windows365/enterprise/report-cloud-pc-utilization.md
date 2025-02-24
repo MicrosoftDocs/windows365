@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/07/2024
+ms.date: 02/24/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -76,7 +76,7 @@ You can use these filters to help you understand usage patterns and identify Clo
 
 You can see similar utilization data on a per-Cloud PC basis:
 
-1. Sign in to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Cloud PC performance** > **Cloud PC utilization**.
+1. Sign in to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Reports** > **Cloud PC overview** > **Cloud PC utilization**.
 2. Select a device and then select **Performance (preview)**.
 3. The **Time connected** section shows usage data for this Cloud PC. For more detail, in this section, select **View report**.
 
