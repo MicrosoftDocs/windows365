@@ -66,7 +66,7 @@ Only administrators can create a manual restore point, and each Cloud PC can hav
 
 For short- and long-term restore points, as time passes and a new restore point is added, the oldest restore point is removed.
 
-Each Cloud PC can have one manual restore point. If you create another manual restore point for a Cloud PC that already has a manual restore point, the existing restore point is overwritten by the new restore point. If not overwritten, a manual restore point expires in approximately 28 days. Manual restore points have an expiration date shown when they'e created.
+Each Cloud PC can have one manual restore point. If you create another manual restore point for a Cloud PC that already has a manual restore point, the existing restore point is overwritten by the new restore point. If not overwritten, a manual restore point expires in approximately 28 days. Manual restore points have an expiration date that shows when they were created.
 
 [!INCLUDE [Restore risks and best practices](../includes/restore-risks-best-practices.md)]
 
