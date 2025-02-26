@@ -65,7 +65,7 @@ For more information about public preview items, see [Public preview in Windows 
 
 Windows App and the Remote Desktop app for Android now support FIDO devices and passkeys for Microsoft Entra ID sign in on brokered and unbrokered devices. For more information, see [Compare Windows App features across platforms and devices](windows-app/compare-platforms-features?pivots=azure-virtual-desktop#cloud-service-authentication).
 
-#### Intune Mobile Application Management (MAM) support on Windows App on Android (preview) for devices running Android 15 <!--56126266-->
+#### Intune Mobile Application Management (MAM) support on Windows App on Android (preview) for devices running Android 15<!--56126266-->
 
 Intune MAM policies can now be applied to Windows App on Android (preview) when the device is running on Android 15. Previously, Windows App could run on Android 15, but MAM policies wouldn’t take effect. For more information, see [Configure client device redirection settings for Windows App and the Remote Desktop app using Microsoft Intune](/azure/virtual-desktop/client-device-redirection-intune).
 
