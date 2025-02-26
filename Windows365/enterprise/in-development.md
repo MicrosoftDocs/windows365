@@ -8,7 +8,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/06/2025
-ms.topic: conceptual
+ms.topic: whats-new
 ms.service: windows-365
 
 # optional metadata
