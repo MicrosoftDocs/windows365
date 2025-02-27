@@ -8,7 +8,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby 
 ms.date: 08/06/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
 ms.localizationpriority: high
