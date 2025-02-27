@@ -8,7 +8,7 @@ author: ErikjeMS
 manager: dougeby
 ms.date: 08/28/2024
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: windows-365
 ms.subservice: windows-365-business
 ms.localizationpriority: high

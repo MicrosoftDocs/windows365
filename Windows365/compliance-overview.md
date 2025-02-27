@@ -4,7 +4,7 @@ author: erikjeMS
 ms.author: erikje
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: windows-365
 ms.collection: 
  - tier1
